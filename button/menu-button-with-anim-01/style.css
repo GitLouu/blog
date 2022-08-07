@@ -1,0 +1,68 @@
+.show-area {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-menu-btn * {
+    box-sizing: border-box;
+}
+
+.btn-menu-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    background-color: #cdcdcd;
+    cursor: pointer;
+    transform: scale(.5);
+}
+
+.btn-menu-btn .innerline {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: #000;
+    transition: all 200ms linear;
+}
+
+.btn-menu-btn .innerline.one {
+    top: 9px;
+}
+
+.btn-menu-btn .innerline.two {
+    top: 26px;
+}
+
+.btn-menu-btn .innerline.three {
+    bottom: 9px;
+}
+
+.btn-menu-btn.active .innerline{
+    background-color: red;
+}
+
+.btn-menu-btn.active .innerline.one {
+    top: 26px;
+    transform: rotate(45deg);
+}
+
+.btn-menu-btn.active .innerline.two {
+    opacity: 0;
+    background-color: inherit;
+}
+
+.btn-menu-btn.active .innerline.three {
+    bottom: 26px;
+    transform: rotate(-45deg);
+}

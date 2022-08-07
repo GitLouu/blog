@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>有动画的菜单(展开)按钮01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="show-area">
+        <div class="btn-menu-btn">
+            <span class="innerline one"></span>
+            <span class="innerline two"></span>
+            <span class="innerline three"></span>
+        </div>
+    </div>
+    <script>
+        const btn = document.querySelector(".btn-menu-btn");
+        btn.onclick = () => {
+            btn.classList.toggle("active");
+        };
+    </script>
+</body>
+
+</html>
