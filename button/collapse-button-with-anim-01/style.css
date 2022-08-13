@@ -1,0 +1,43 @@
+/* 展示区域 */
+.show-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+/* 折叠按钮 */
+.btn-collapse-btn,
+.btn-collapse-btn * {
+    box-sizing: border-box;
+}
+
+.btn-collapse-btn {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    transform: scale(.5);
+}
+
+.btn-collapse-btn .innerline {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: 20%;
+    left: 10%;
+    top: 40%;
+    border-radius: 5px;
+    background-color: #000;
+    transition: all 200ms linear;
+}
+
+.btn-collapse-btn .innerline.two {
+    transform: rotate(90deg);
+}
+
+.btn-collapse-btn.active .innerline.two {
+    transform: rotate(0deg);
+}
