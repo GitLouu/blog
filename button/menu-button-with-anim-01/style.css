@@ -1,7 +1,6 @@
+/* 展示区 */
 .show-area {
     position: absolute;
-    width: 200px;
-    height: 200px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -10,6 +9,8 @@
     justify-content: center;
 }
 
+/* 菜单按钮 */
+.btn-menu-btn,
 .btn-menu-btn * {
     box-sizing: border-box;
 }
@@ -20,7 +21,7 @@
     height: 60px;
     border-radius: 5px;
     border: none;
-    background-color: #cdcdcd;
+    background-color: #ddd;
     cursor: pointer;
     transform: scale(.5);
 }
@@ -28,24 +29,24 @@
 .btn-menu-btn .innerline {
     display: block;
     position: absolute;
-    width: 50px;
-    height: 8px;
+    width: 80%;
+    height: 15%;
+    left: 10%;
     border-radius: 5px;
-    margin-left: 5px;
     background-color: #000;
     transition: all 200ms linear;
 }
 
 .btn-menu-btn .innerline.one {
-    top: 9px;
+    top: 13.75%;
 }
 
 .btn-menu-btn .innerline.two {
-    top: 26px;
+    top: 42.5%;
 }
 
 .btn-menu-btn .innerline.three {
-    bottom: 9px;
+    bottom: 13.75%;
 }
 
 .btn-menu-btn.active .innerline{
@@ -53,7 +54,7 @@
 }
 
 .btn-menu-btn.active .innerline.one {
-    top: 26px;
+    top: 42.5%;
     transform: rotate(45deg);
 }
 
@@ -63,6 +64,6 @@
 }
 
 .btn-menu-btn.active .innerline.three {
-    bottom: 26px;
+    bottom: 42.5%;;
     transform: rotate(-45deg);
 }
